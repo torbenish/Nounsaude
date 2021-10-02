@@ -9,7 +9,7 @@
     "axios": "^0.22.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -35,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/torbenish/Beyou",
+  "author": "Débora Franquêta <debora_franqueta@hotmail.com>",
+  "license": "MIT"
 }
