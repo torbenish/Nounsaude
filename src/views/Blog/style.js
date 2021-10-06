@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Raleway:wght@500&display=swap');
+import styled from 'styled-components';
 
-* {
-	margin: 0;
+export const Container = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Raleway:wght@500&display=swap');
+  margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
-}
-
-.blog {
+    .blog {
 	min-height: 100vh;
 
 	padding: 7rem 0;
@@ -50,4 +48,6 @@
 	font-size: 1.4rem;
 
 	margin-top: 15px;
-}
+}      
+
+`

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../../services/api"
-import "./style.css"
+import { Container } from "./style";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -24,6 +24,7 @@ const Blog = () => {
     )
   }
   return (
+      <Container>
     <div className="blog">
       <div className="cards">
         {posts.map((post, key) => {
@@ -44,6 +45,7 @@ const Blog = () => {
       </div>
       
     </div>
+    </Container>
   );
 }
 
