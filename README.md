@@ -18,4 +18,4 @@ $ npm start ou yarn start
 ## Back-end:
 
 ### Link provisório:
-https://beyou-five.vercel.app/
+https://beyou-five.vercel.app/blog
