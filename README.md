@@ -1,7 +1,7 @@
 # Instalação 
 
 ## Abra o terminal e clone o seguinte repositório:
-$ https://github.com/torbenish/Beyou.git
+$ git clone https://github.com/torbenish/Beyou.git
 
 ## Instalar as dependências
 $ npm install ou $ yarn install
