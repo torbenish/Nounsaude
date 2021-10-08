@@ -1,0 +1,15 @@
+img{
+    position: static;
+    width: 1440px;
+    height: 826px;
+    left: 0px;
+    top: 0px;  
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 6.56%, rgba(255, 255, 255, 0) 16.46%, rgba(229, 10, 127, 0.31) 81.04%, #00A0E3 100%), url(pexels-rodnae-productions-6784742.jpg);
+}
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 30px 0px;
