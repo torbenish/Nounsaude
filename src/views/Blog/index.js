@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { api } from "../../services/api"
 import { Container } from "./style";
 
+import Footer from "../../components/Footer"
+
 const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true)
@@ -24,6 +26,7 @@ const Blog = () => {
     )
   }
   return (
+    <>
       <Container>
     <div className="blog">
       <div className="cards">
@@ -46,7 +49,10 @@ const Blog = () => {
       
     </div>
     </Container>
+    <Footer />
+    </>
   );
 }
 
 export default Blog;
+
