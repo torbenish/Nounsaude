@@ -15,13 +15,13 @@ const SignUp = () => {
       api
         .post('/create_sign', data)
         .then( response => {
-          toast.success("Cadastro realizado com sucesso! Você está sendo redirecionado para a página de login", {
+          toast.success("Cadastro realizado com sucesso! Você será redirecionado para a página principal", {
             hideProgressBar: false,
             onClose: () => history.push('/blog'),
           });
         })
         .catch( e => {
-          toast.error("Oops, algo deu errado");
+          toast.error("Erro no cadastro");
         });
     },
     [data, history]
@@ -30,11 +30,12 @@ const SignUp = () => {
   return (
     <FormStyle>
       <div className="card">
-        <h5>Cadastre-se</h5>
+        <h5>Faça parte</h5>
+        <p>Preencha os seus dados pessoais, nossa equipe entrará em contato contigo para fazer o plano que mais encaixa no seu perfil.</p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Informe seu nome"
+            placeholder="Informe seu nome completo"
             onChange={e => setData({ ...data, name: e.target.value })}
           />
           <input
@@ -52,11 +53,10 @@ const SignUp = () => {
             placeholder="Informe seu telefone"
             onChange={e => setData({ ...data, telephone: e.target.value })}
           />
-          <input type="submit" value="Cadastrar" />
+          <div className="button-center">
+          <input type="submit" value="Enviar" />
+          </div>
         </form>
-        <Link to="/blog"> 
-        Clique aqui para ir no blog.
-        </Link>
       </div>
     </FormStyle>
   );

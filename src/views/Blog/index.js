@@ -1,3 +1,4 @@
+import Navbar from "../../components/Nav/Navbar"
 import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Container } from "./style";
@@ -64,6 +65,7 @@ const Blog = () => {
 
   return (
     <>
+    <Navbar/>
       <Container>
         <div className="cardLayout">
           {posts.map((post, key) => {
