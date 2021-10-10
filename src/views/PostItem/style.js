@@ -1,18 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-/* margin: 0;
-padding: 0;
-background-color: red;
-  .card{
-	height:100%;
-	width:100vw;
-    display: flex;
-	flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	background-color: blue;
-  } */
+
   @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Raleway:wght@500&display=swap');
   margin: 0;
 	padding: 0;
