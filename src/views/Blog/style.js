@@ -13,7 +13,7 @@ background-color: red;
     align-items: center;
 	background-color: blue;
   } */
-  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Raleway:wght@500&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Raleway:wght@500&display=swap');
   margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -60,5 +60,12 @@ background-color: red;
 	font-size: 1.4rem;
 
 	margin-top: 15px;
-}      
+}       */
+
+.card {
+	background-color:red;
+}
+.card:hover {
+	box-shadow: 5px 10px 20px 1px rgb(255, 255, 255, 0.2) !important;
+}
 `;

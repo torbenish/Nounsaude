@@ -3,7 +3,7 @@ import Navbar from "../../components/Nav/Navbar"
 import Footer from "../../components/Footer"
 import { Container } from "./style";
 
-const index = () => {
+const SignUp = () => {
   return (
     <>
     <Navbar/>
@@ -15,5 +15,5 @@ const index = () => {
   )
 }
 
-export default index
+export default SignUp
 
