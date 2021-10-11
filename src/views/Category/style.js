@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardStyle = styled.div`
+export const Container= styled.div`
   .card {
     margin: 0 auto; /* Added */
     float: none; /* Added */

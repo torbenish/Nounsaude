@@ -68,4 +68,16 @@ background-color: red;
 .card:hover {
 	box-shadow: 5px 10px 20px 1px rgb(255, 255, 255, 0.2) !important;
 }
+
+.teste {
+	width: 60vh;
+}
+
+@media screen and (max-width: 540px) {
+  .teste {
+	width: 48vh;
+	padding: 0.5rem;
+  }
+  
+}
 `;

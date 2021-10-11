@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Container } from "./style";
-import { useParams, Link } from "react-router-dom";
 
 const PostItem = () => {
   const [postData, setPostData] = useState({});
   const [loading, setLoading] = useState(true);
-  const { id } = useParams();
 
 useEffect(() => {
   api
-  .get (`/show_post/${id}`)
+  .get (`/list_posts/1`)
   .then((response) => {
     setPostData(response.data.post);
     setLoading(false)

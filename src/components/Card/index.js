@@ -43,6 +43,9 @@ const Card = () => {
               <Link to={`/blog/${post._id}`}>
                 <h1>{post.title}</h1>
               </Link>
+              <Link to={`/blog/category`}>
+                <h1>{post.title}</h1>
+              </Link>
             </div>
           </div>
         );

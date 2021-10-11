@@ -11,9 +11,11 @@ const Blog = () => {
         <div className="container d-flex mx-auto justify-content-center align-items-center h-100 ">
           <div className="row">
             <div className="col-12">
+              <div className="teste">
               <br/>
               <Card />
               <br/>
+              </div>
             </div>
           </div>
         </div>
