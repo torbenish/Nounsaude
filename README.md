@@ -1,10 +1,10 @@
 **<h1 align="center"> <ins>[NOUN Saude Trans](https://nounsaude.vercel.app/)</ins> </h1>**
 
 <p align="center">
- <a href="#📄sobre">Sobre</a> •
- <a href="#💻instalação">Instalação</a> • 
- <a href="#🔧tecnologias">Tecnologias</a> • 
- <a href="#👥autores">Autores</a> 
+ <a href="#sobre">Sobre</a> •
+ <a href="#instalação">Instalação</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#autores">Autores</a> 
 </p>
 
 ## 📄Sobre
