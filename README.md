@@ -28,7 +28,7 @@ $ npm install ou $ yarn install
 $ npm start ou yarn start
 ```
 
-## 🔧Tecnologias do front-end
+## 🔧Tecnologias
 
 - **[React](https://reactjs.org/)**
 - **[Axios](https://www.npmjs.com/package/react-axios)**
