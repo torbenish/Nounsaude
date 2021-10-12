@@ -5,7 +5,7 @@ export function Button() {
     return (
         <ButtonStyle>
         <Link to='signup'>
-            <button className='btn'>Sign up</button>
+            <button className='btn'>Como funciona?</button>
         </Link>
         </ButtonStyle>
     )

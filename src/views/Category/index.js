@@ -1,52 +1,59 @@
+import { CardStyle } from "./style";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { api } from "../../services/api";
-import { Container } from "./style";
+import { Container } from "./style"
 
-const PostItem = () => {
-  const [postData, setPostData] = useState({});
-  const [loading, setLoading] = useState(true);
+const Cat = () => {
+  const [posts, setPosts] = useState([]);
 
 useEffect(() => {
   api
-  .get (`/list_posts/1`)
+  .get ("/list_posts/1")
   .then((response) => {
-    setPostData(response.data.post);
-    setLoading(false)
-    console.log(response);
+    setPosts(response.data.posts);
   })
   .catch(() => {
     console.log("Erro");
   });
 }, []);
 
-if(loading){
-  return (
-    <h1>Loading</h1>
-  )
-}
 return (
   <Container>
-    <div className="blog">
-      <div className="cards">
-        {loading && <div>...</div>}
-        {postData && (
-          <div className="card">
-            <div className="card-body">
-            <img src={postData.image} alt="BigCo Inc. logo"/>
-              <h1>{postData.title}</h1>
-              <div className="line"></div>
-              <h2>{postData.content}</h2>
-              <div className="line"></div>
-              <h3>{postData.summary}</h3>
-              <div className="line"></div>
-              <h3>Categoria: {postData.category}</h3>
+    {posts.filter((post, key) => {
+        return (
+          <div className="card text-center bg-light" key={key}>
+            <img
+              class="mx-auto d-block"
+              src={post.image}
+              alt="Imagem do card"
+              width="300"
+              height="200"
+            />
+            <div className="card-body text-dark">
+              <h4 className="card-title">{post.title}</h4>
+              <p className="card-text text-secondary">{post.summary}</p>
+              <p className="card-text text-secondary">{post.content}</p>
+              <a
+                href=""
+                className="btn btn-outline-secondary rounded-0"
+                target="_blank"
+              >
+                Mais informações
+              </a>
+
+              <Link to={`/blog/${post._id}`}>
+                <h1>{post.title}</h1>
+              </Link>
+              <Link to={`/blog/category`}>
+                <h1>{post.title}</h1>
+              </Link>
             </div>
           </div>
-        )}
-      </div>
-    </div>
+        );
+      })}
   </Container>
 );
 }
 
-export default PostItem;
+export default Cat;

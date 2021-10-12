@@ -26,8 +26,6 @@ export const FormStyle = styled.div`
     p {
       font-family: "Work Sans", sans-serif;
       font-size: 20px;
-      /* padding-top: 15px;
-      padding-bottom: 35px; */
     }
     a {
       text-decoration: none;

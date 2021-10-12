@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { FormStyle } from "./style";
 import { api } from "../../services/api"
 import { toast } from "react-toastify"
@@ -17,7 +17,7 @@ const SignUp = () => {
         .then( response => {
           toast.success("Cadastro realizado com sucesso! Você será redirecionado para a página principal", {
             hideProgressBar: false,
-            onClose: () => history.push('/blog'),
+            onClose: () => history.push('/'),
           });
         })
         .catch( e => {

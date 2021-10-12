@@ -2,6 +2,7 @@ import Navbar from "../../components/Nav/Navbar"
 import Footer from "../../components/Footer"
 import { useState, useEffect } from 'react';
 import { Container } from "./style"
+import Gallery from "../../components/Carousel"
 import { FiArrowUp } from "react-icons/fi";
 
 const Home = () => {
@@ -31,7 +32,9 @@ const Home = () => {
 
     return (
         <>
+        <div className="Background">
         <Navbar/>
+        </div>
         <Container>
         <div className="Back__To__Top">
             <h1>Home</h1>
@@ -51,6 +54,8 @@ const Home = () => {
               </>
           )}
         </Container>
+
+        <Gallery/>
         <Footer/>
         </>
     )
