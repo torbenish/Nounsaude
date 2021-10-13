@@ -1,100 +1,74 @@
-import Navbar from "../../components/Nav/Navbar"
-import { useEffect, useState } from "react";
-import { api } from "../../services/api";
+import Navbar from "../../components/Nav/Navbar";
+import Card from "../../components/Card";
+import { useState, useEffect } from 'react';
 import { Container } from "./style";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
-} from "reactstrap";
-
-import { Link } from "react-router-dom";
-// import Footer from "../../components/Footer";
+import { FiArrowUp } from "react-icons/fi";
 
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    api
-      .get("/list_posts")
-      .then((response) => {
-        setPosts(response.data.posts);
-        setLoading(false);
-      })
-      .catch(() => {
-        console.log("Erro");
-      });
+  
+  useEffect( () => {
+    window.addEventListener('scroll', toggleVisibility);
   }, []);
 
-  if (loading) {
-    return <h1>Loading</h1>;
+  const scrollToTop =()=> {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }
-  // return (
-  //   <>
-  //     <Container>
-  //   <div className="blog">
-  //     <div className="cards">
-  //       {posts.map((post, key) => {
-  //         return (
-  //           <div className="card">
-  //             <div className="card-body" key={key}>
-  //             <img src={companyLogo} alt="BigCo Inc. logo"/>
-  //               <h1>{post.title}</h1>
-  //               <div className="line"></div>
-  //               <h2>{post.summary}</h2>
-  //               <div className="line"></div>
-  //               <h3>{post.content}</h3>
-  //               <div className="line"></div>
-  //               <h3>Categoria: {post.category}</h3>
-  //             </div>
-  //           </div>
-  //         );
-  //       })}
-  //     </div>
-
-  //   </div>
-  //   </Container>
-  //   <Footer />
-  //   </>
-  // );
+      
+    const [is_visible, set_visible] = useState(false);
+    
+    const toggleVisibility =()=> {
+      if (window.pageYOffset > 100) {
+        set_visible(true);
+      
+      } else {
+        set_visible(false);
+      }
+    }
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
+      <div className="Back__To__Top">
       <Container>
-        <div className="cardLayout">
-          {posts.map((post, key) => {
-            return (
-              <div className="card-body" key={key}>
-                <Card>
-                  <CardImg
-                    top
-                    width="280px"
-                    src={post.image}
-                    alt="Card image cap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">{post.title}</CardTitle>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      {post.summary}
-                    </CardSubtitle>
-                    <CardText>{post.context}</CardText>
-                    <Link to={`/blog/${post._id}`}>
-                      <Button>Saiba mais</Button>
-                    </Link>
-                  </CardBody>
-                </Card>
-                <Link to={`/blog/${post._id}`}><h1>{post.title}</h1></Link>
-              </div>
-            );
-          })}
+        <h2>Buscar por Assunto</h2>
+        <br/>
+        <div className="subject">
+        <button type="button" class="btn btn-primary-outline">Saúde</button>
+        <button type="button" class="btn btn-primary-outline">Transição</button>
+        <button type="button" class="btn btn-primary-outline">Exercicios</button>
+        <button type="button" class="btn btn-primary-outline">Efeitos</button>
+        <button type="button" class="btn btn-primary-outline">Remédios</button>
+        <button type="button" class="btn btn-primary-outline">Hormônios</button>
         </div>
+        <br/>
+        <div className="author">
+        <h2>Buscar por Autor</h2>
+        <br/>
+        <button type="button" class="btn btn-primary-outline">João</button>
+        <button type="button" class="btn btn-primary-outline">Maria</button>
+        <button type="button" class="btn btn-primary-outline">Rafael</button>
+        <button type="button" class="btn btn-primary-outline">Antônio</button>
+        <button type="button" class="btn btn-primary-outline">Pedro</button>
+        <button type="button" class="btn btn-primary-outline">Rafaela</button>
+        </div>
+        <div className="container d-flex mx-auto justify-content-center align-items-center h-100 ">
+          <div className="row">
+            <div className="col-12">
+              <br/>
+              <Card />
+              <br/>
+            </div>
+          </div>
+        </div>
+        {is_visible && ( <>
+              <span onClick={scrollToTop} className="scrolls"> <FiArrowUp /> </span><span className="ltx-hex"><span className="ltx-hex-inner"></span></span>  
+              </>
+          )}
       </Container>
+      </div>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { FormStyle } from "./style";
 import { api } from "../../services/api"
 import { toast } from "react-toastify"
@@ -16,12 +16,20 @@ const SignUp = () => {
         .post('/create_sign', data)
         .then( response => {
           toast.success("Cadastro realizado com sucesso! Você será redirecionado para a página principal", {
+            position: "top-right",
+            autoClose: 5000,
             hideProgressBar: false,
-            onClose: () => history.push('/blog'),
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            onClose: () => history.push('/'),
           });
         })
         .catch( e => {
-          toast.error("Erro no cadastro");
+          toast.error("Erro no cadastro", {
+            autoClose: 3100,
+          });
         });
     },
     [data, history]
