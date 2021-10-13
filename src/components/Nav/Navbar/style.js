@@ -89,7 +89,7 @@ export const NavStyle = styled.nav`
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 70vh;
+      height: 50vh;
       position: absolute;
       top: 80px;
       left: -100%;
@@ -97,7 +97,7 @@ export const NavStyle = styled.nav`
       transition: all 0.5s ease;
     }
     .nav-menu.active {
-      background: #e5e5e5;
+      background: #F8F8FF;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -141,5 +141,14 @@ export const NavStyle = styled.nav`
     button {
       display: none;
     }
+
+    @media screen and (max-width: 400px) {
+    .navbar {
+      background: #1888ff;
+    }
+    .nav-menu {
+     height: 57vh;     
+    }
+  }
   }
 `;
