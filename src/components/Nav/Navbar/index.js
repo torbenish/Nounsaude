@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "../Button"
 import { NavStyle } from "./style";
 import { Link } from "react-router-dom";
-
+import logo from "../../../assets/img/logo.png"
 function Navbar() {
   const [click, setClick] = useState(false);
 
@@ -13,7 +13,7 @@ function Navbar() {
       <NavStyle>
         <nav className="navbar">
           <Link to="/" className="navbar-logo">
-          <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          <img width="40%" src={logo} />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />

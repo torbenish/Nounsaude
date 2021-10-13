@@ -5,8 +5,8 @@ import profile2 from "../../assets/img/profile2.jpg";
 import profile3 from "../../assets/img/profile3.jpg";
 
 function CardProfile() {
-  const [name, setName] = useState("Your Name");
-  const [job, setJob] = useState("Job Title");
+  const [name, setName] = useState("Nome");
+  const [job, setJob] = useState("Emprego");
   const [about, setAbout] = useState(
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum amet repudiandae fuga delectus fugit labore debitis distinctio nulla exercitationem consequuntur. Libero, ipsam consequuntur natus sed dolorum illo aut hic tenetur?"
   );

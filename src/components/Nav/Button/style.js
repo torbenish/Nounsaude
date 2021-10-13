@@ -7,7 +7,6 @@ export const ButtonStyle = styled.button`
 .btn {
   padding: 13px 94px; 
   margin-bottom: 16px;
-  /* margin: -20px -20px; */
   border-radius: 50px;
   outline: none;
   border: none;

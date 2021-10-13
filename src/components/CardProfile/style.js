@@ -37,7 +37,7 @@ export const CardProfileStyle = styled.div`
   }
 
   img {
-    border: 2px solid #8e00b9;
+    border: 2px solid #e50a7f;
   }
 
   .lower-container {
@@ -56,19 +56,18 @@ export const CardProfileStyle = styled.div`
   }
 
   .lower-container h3 {
-    color: #2f2d2e;
+    color: #e50a7f;
     font-weight: 600;
     font-size: 1.2rem;
   }
 
   .lower-container h4 {
-    color: #8e00b9;
+    color: #00a0e3;
     font-weight: 800;
     font-size: 1.2rem;
   }
 
   .lower-container p {
-    color: #8e00b9;
     font-family: sans-serif;
     color: #2d2d2e;
     font-size: 1.1rem;
