@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CarouselStyle = styled.footer`
+ 
   .horizontal-snap {
     margin: 0 auto;
     display: grid;

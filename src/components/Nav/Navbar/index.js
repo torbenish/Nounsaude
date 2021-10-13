@@ -13,7 +13,7 @@ function Navbar() {
       <NavStyle>
         <nav className="navbar">
           <Link to="/" className="navbar-logo">
-            NOUN <i class='fab fa-firstdraft'/>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />

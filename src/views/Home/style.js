@@ -6,9 +6,8 @@ export const Container = styled.div`
     align-items: center;
     width: 100%;
     height: 100vh; */
-  .Background {
-    background-image:url('../../assets/img/teste.jpg');
-  }
+    width: 100%;
+    height: 100vh;
   .Back__To__Top {
     position: relative;
     max-width: 1280px;
@@ -44,5 +43,23 @@ export const Container = styled.div`
   }
   .scrolls:hover {
     background-color: #00bf6f;
+  }
+
+  .CardProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Card {
+    flex-direction: row;
+    margin: 20px;
+  }
+
+  @media screen and (max-width: 540px) {
+    .CardProfile {
+      flex-direction: column;
+    }
   }
 `;
