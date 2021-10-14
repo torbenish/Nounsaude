@@ -20,7 +20,7 @@ const Blog = () => {
     const [is_visible, set_visible] = useState(false);
     
     const toggleVisibility =()=> {
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 500) {
         set_visible(true);
       
       } else {

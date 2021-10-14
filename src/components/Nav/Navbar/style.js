@@ -29,7 +29,7 @@ export const NavStyle = styled.nav`
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 50px;
+    grid-gap: 150px;
     list-style: none;
     text-align: center;
     width: 70vw;
@@ -64,7 +64,7 @@ export const NavStyle = styled.nav`
   .btn-primary-outline {
   background-color: transparent;
   color: #1888ff;
-  margin-left: -72px;
+  margin-left: -180px;
   margin-bottom: 15px;
   border: 1px solid #00A0E3;
   padding: 13px 94px;
