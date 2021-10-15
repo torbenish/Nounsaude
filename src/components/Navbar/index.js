@@ -23,7 +23,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/sign" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/assineja" className="nav-links" onClick={closeMobileMenu}>
                 Assine já
               </Link>
             </li>

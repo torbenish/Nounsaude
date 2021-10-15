@@ -4,6 +4,7 @@ import { Container } from "./style";
 import { useParams } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"
+import { FiArrowUp } from "react-icons/fi";
 
 const PostItem = () => {
   const [postData, setPostData] = useState({});
@@ -23,6 +24,28 @@ useEffect(() => {
   });
 }, []);
 
+useEffect( () => {
+  window.addEventListener('scroll', toggleVisibility);
+}, []);
+
+const scrollToTop =()=> {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+    
+  const [is_visible, set_visible] = useState(false);
+  
+  const toggleVisibility =()=> {
+    if (window.pageYOffset > 500) {
+      set_visible(true);
+    
+    } else {
+      set_visible(false);
+    }
+  }
+
 if(loading){
   return (
     <h1>Loading</h1>
@@ -31,6 +54,7 @@ if(loading){
 return (
   <>
   <Navbar />
+  <div className="Back__To__Top">
   <Container>
     <div className="blog">
       <div className="cards">
@@ -43,7 +67,7 @@ return (
               <div className="line"></div>
               <h2>por {postData.author}</h2>
               <div className="line"></div>
-              <h3>{postData.text}</h3>
+              <p>{postData.text}</p>
               <div className="line"></div>
               <h3> categoria:{postData.category}</h3>
             </div>
@@ -51,8 +75,13 @@ return (
         )}
       </div>
     </div>
-    <Footer/>
+    {is_visible && ( <>
+              <span onClick={scrollToTop} className="scrolls"> <FiArrowUp /> </span><span className="ltx-hex"><span className="ltx-hex-inner"></span></span>  
+              </>
+          )}
   </Container>
+  <Footer/>
+  </div>
   </>
 );
 }

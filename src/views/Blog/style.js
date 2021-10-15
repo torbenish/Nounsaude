@@ -6,6 +6,10 @@ export const Container = styled.div`
   border-color: #ccc;
 }
 
+h3 {
+  color: #0fa8ff;
+  margin-top: 10px;
+}
 .card {
 	background-color:white;
 }
@@ -13,12 +17,9 @@ export const Container = styled.div`
 	box-shadow: 5px 10px 20px 1px rgb(255, 255, 255, 0.2) !important;
 }
 
-.subject {
-	width: 50vw;
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	align-items: center;
+.subject button{
+	margin: 10px;
+  border-radius: 30px;
 }
 
 .Back__To__Top{

@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const FooterStyle = styled.footer`
   @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500;600;700&family=Work+Sans:wght@400;700&display=swap");
+  
 
   .container-fluid  {
     padding-top: 10px;
   }
   .text-uppercase {
     color: #00a0e3;
-    font-family: MuseoModerno;
+    font-family: "MuseoModerno", cursive;
     font-size: 24px;
   }
   img {
@@ -30,7 +31,7 @@ export const FooterStyle = styled.footer`
 
   .footer-copyright {
     color: #00a0e3;
-    font-family: MuseoModerno;
+    font-family: "MuseoModerno", cursive;
   }
 
   @media (max-width: 850px) {
@@ -46,8 +47,3 @@ export const FooterStyle = styled.footer`
     }
   }
 `;
-
-// color: #00a0e3;
-// color: #e50a7f;
-// font-family: MuseoModerno;
-// font-family: Work Sans;

@@ -2,6 +2,7 @@ import { CardStyle } from "./style";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../../services/api";
+import Button from "react-bootstrap/Button"
 const Card = () => {
   const [posts, setPosts] = useState([]);
 
@@ -29,22 +30,13 @@ const Card = () => {
               height="200"
             />
             <div className="card-body text-dark">
-              <h4 className="card-title">{post.title}</h4>
-              <p className="card-text text-secondary">por {post.summary}</p>
-              <p className="card-text text-secondary">{post.content}</p>
-              <a
-                href=""
-                className="btn btn-outline-secondary rounded-0"
-                target="_blank"
-              >
-                Mais informações
-              </a>
-
+              <h2 className="card-title">{post.title}</h2>
+              <h5 className="card-text">por {post.author}</h5>
+              <p className="card-text">{post.summary}</p>             
               <Link to={`/blog/${post._id}`}>
-                <h1>{post.title}</h1>
-              </Link>
-              <Link to={`/blog/category`}>
-                <h1>{post.title}</h1>
+                <Button variant="outline-primary" size="xs">
+                  Mais informações
+                </Button>
               </Link>
             </div>
           </div>

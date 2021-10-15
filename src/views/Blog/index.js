@@ -34,7 +34,7 @@ const Blog = () => {
       <Navbar />
       <div className="Back__To__Top">
       <Container>
-        <h2>Buscar por Assunto</h2>
+        <h3>Buscar por Assunto</h3>
         <br/>
         <div className="subject">
         <button type="button" class="btn btn-primary-outline">Saúde</button>
@@ -46,14 +46,16 @@ const Blog = () => {
         </div>
         <br/>
         <div className="author">
-        <h2>Buscar por Autor</h2>
+        <h3>Buscar por Autor</h3>
         <br/>
-        <button type="button" class="btn btn-primary-outline">João</button>
-        <button type="button" class="btn btn-primary-outline">Maria</button>
-        <button type="button" class="btn btn-primary-outline">Rafael</button>
-        <button type="button" class="btn btn-primary-outline">Antônio</button>
-        <button type="button" class="btn btn-primary-outline">Pedro</button>
-        <button type="button" class="btn btn-primary-outline">Rafaela</button>
+        <div className="subject">
+        <button type="button" class="btn btn-primary-outline">Dr João Carlos</button>
+        <button type="button" class="btn btn-primary-outline">Antônio José</button>
+        <button type="button" class="btn btn-primary-outline">Segal Ohio</button>
+        <button type="button" class="btn btn-primary-outline">Flávia Bezerra</button>
+        <button type="button" class="btn btn-primary-outline">Dra. Andrea Muzza</button>
+        <button type="button" class="btn btn-primary-outline">Tarso César</button>
+        </div>
         </div>
         <div className="container d-flex mx-auto justify-content-center align-items-center h-100 ">
           <div className="row">

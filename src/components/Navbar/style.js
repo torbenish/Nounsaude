@@ -34,7 +34,7 @@ export const NavStyle = styled.nav`
     text-align: center;
     width: 70vw;
     justify-content: end;
-    margin-right: 2rem;
+    margin-right: -14rem;
   }
   .nav-item {
     display: flex;
