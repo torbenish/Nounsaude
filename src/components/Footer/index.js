@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="col-md-4 mb-md-0 mb-4">
                 <h5 className="text-uppercase">Serviços</h5>
                 <ul className="list-unstyled">
-                    <li><a href="/sign" >Assine já</a></li>
+                    <li><a href="/assineja" >Assine já</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/signup">Fale Conosco</a></li>
                 </ul>

@@ -68,7 +68,7 @@ export const CardProfileStyle = styled.div`
   }
 
   .lower-container p {
-    font-family: sans-serif;
+    font-family: Roboto sans-serif;
     color: #2d2d2e;
     font-size: 1.1rem;
     text-align: justify;

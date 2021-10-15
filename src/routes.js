@@ -5,8 +5,6 @@ import Blog from "./views/Blog";
 import AssineJa from "./views/AssineJa"
 import SignUp from "./views/SignUp";
 import PostItem from "./views/PostItem";
-import Category from "./views/Category"
-import MainPage from "./views/MainPage"
 
 const Routes = () => {
   return (
@@ -17,8 +15,6 @@ const Routes = () => {
         <Route path="/assineja" component={AssineJa}/>
         <Route path="/signup" component={SignUp} />
         <Route path="/blog/:id" component={PostItem} />
-        <Route path="/blog/category" exact component={Category} />
-        <Route path="/mainpage" component={MainPage} />
       </Switch>
     </BrowserRouter>
   );

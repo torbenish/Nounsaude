@@ -37,7 +37,7 @@ function Navbar() {
                 Fale Conosco
               </Link>
             </li>
-            <Link to="/signup"><button type="button" class="btn btn-primary-outline">Como funciona</button></Link>
+            <Link to="/assineja"><button type="button" class="btn btn-primary-outline">Como funciona</button></Link>
           </ul>
         </nav>
       </NavStyle>

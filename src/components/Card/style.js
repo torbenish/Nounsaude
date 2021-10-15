@@ -24,17 +24,32 @@ export const CardStyle = styled.div`
   .card-body h2 {
     font-size: 1.6rem;   
     font-weight: bold;
+    font-family: "MuseoModerno", cursive;
 
   }
 
   .card-body h5 {
-    font-size: 14px;  
+    font-size: 16px;  
 
   }
   
   .card-body p {
     padding: 0 0.4rem;
-    font-size: 16px;
+    font-size: 19px;
     color: black;
+    font-family: "Roboto", sans-serif;
   }
+
+  Button {
+    color: #ffffff;
+    background-color:#00a0e3;
+
+  }
+
+  @media screen and (max-width: 540px) {
+    .card img {
+    width: 250px;
+    height: 150px;
+  }
+}
 `;

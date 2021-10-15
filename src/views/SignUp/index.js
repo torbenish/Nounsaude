@@ -2,7 +2,7 @@ import Form from "../../components/Form"
 import Navbar from "../../components/Navbar"
 import Footer from "../../components/Footer"
 import { Container } from "./style";
-import bannerform from "../../assets/img/bannerform.JPG"
+import form from "../../assets/img/form.png"
 
 const SignUp = () => {
   return (
@@ -10,7 +10,7 @@ const SignUp = () => {
     <Navbar/>
     <Container>
       <div className="formimage">
-      <img src={bannerform} width="100%" alt="Banner do form"/>
+      <img src={form} width="100%" alt="Banner do form"/>
       </div>
     <Form/>
     </Container>

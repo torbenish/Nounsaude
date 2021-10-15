@@ -8,7 +8,8 @@
 </p>
 
 ## 📄Sobre
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aut maxime adipisci ratione! Eos, ea tenetur iure saepe placeat voluptatibus.</p>
+  <p>Projeto final do Gama Experience #38. A proposta foi desenvolver um plano de saúde voltado para afirmação de gênero e terapia hormonal na palma da sua mão.<br/>
+  A Noun é mais que um plano de saúde, nós selecionamos uma equipe multidisciplinar totalmente capacitada para você ir muito mais longe e livre de preconceitos, incrível não é? :D. Além de tudo isso, oferecemos desconto de farmácias, academia e outros estabelecimentos através do nosso time de parceiros.</p>
   
 - Site: [NOUN Saude Trans](https://nounsaude.vercel.app/)
   
