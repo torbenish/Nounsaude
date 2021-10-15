@@ -15,7 +15,6 @@ export default function Principal() {
             Um plano de saúde para afirmação de gênero e terapia hormonal na
             palma da sua mão.
           </p>
-          <Botao texto="Como Funciona?" />
         </div>
       </div>
     </PrincipalStyle>
