@@ -47,7 +47,7 @@ export const NavStyle = styled.nav`
     padding: 0.5rem 1rem;
   }
   .nav-links:hover {
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #1888ff;
     border-radius: 4px;
     transition: all 0.2s ease-out;
@@ -62,29 +62,29 @@ export const NavStyle = styled.nav`
     display: none;
   }
   .btn-primary-outline {
-  background-color: transparent;
-  color: #1888ff;
-  margin-left: 15px;
-  margin-right: -30px;
-  margin-top: 12px;
-  border: 1px solid #00A0E3;
-  padding: 13px 94px;
-  width: 333px;
-  height: 49px;
-  box-sizing: border-box;
-  border-radius: 20px;
-}
-.btn-primary-outline:hover {
-  background-color: #1888ff;
-  color: #FFFFFF;
-}
+    background-color: transparent;
+    color: #1888ff;
+    margin-left: 15px;
+    margin-right: -30px;
+    margin-top: 12px;
+    border: 1px solid #00a0e3;
+    padding: 13px 94px;
+    width: 333px;
+    height: 49px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  .btn-primary-outline:hover {
+    background-color: #1888ff;
+    color: #ffffff;
+  }
   @media screen and (max-width: 540px) {
     .navbar {
       background: #1888ff;
     }
 
-    .navbar-logo{
-      color: #FFFFFF;
+    .navbar-logo {
+      color: #ffffff;
     }
 
     .NavbarItems {
@@ -102,7 +102,7 @@ export const NavStyle = styled.nav`
       transition: all 0.5s ease;
     }
     .nav-menu.active {
-      background: #F8F8FF;
+      background: #f8f8ff;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -148,12 +148,12 @@ export const NavStyle = styled.nav`
     }
 
     @media screen and (max-width: 400px) {
-    .navbar {
-      background: #1888ff;
+      .navbar {
+        background: #1888ff;
+      }
+      .nav-menu {
+        height: 57vh;
+      }
     }
-    .nav-menu {
-     height: 57vh;     
-    }
-  }
   }
 `;
