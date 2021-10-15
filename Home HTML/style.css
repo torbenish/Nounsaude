@@ -19,12 +19,10 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #fff;
-
 }
 
 header{
@@ -32,7 +30,7 @@ header{
     top: 0;
     left: 0%;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +74,8 @@ button{
 
 .content{
     position: relative;
-    width: 100%;
+    width: 80%;
+    margin: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,6 +152,12 @@ h2{
 .card{
     background-color: #00a0e3;
 
+}
+
+.carousel-item .active{
+    padding: 0;
+    padding-left: 0;
+    padding-top: 0;
 }
 
 

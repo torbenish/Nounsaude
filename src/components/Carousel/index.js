@@ -28,28 +28,28 @@ const Gallery = () => {
       ]}
     >
       <Carousel.Item>
-        <img width="100%" height="100%" src={bemol} />
+        <img width="50%" height="50%" src={bemol} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" height="100%" src={fisio} />
+        <img width="50%" height="50%" src={fisio} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" height="100%" src={formula} />
+        <img width="50%" height="50%" src={formula} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" height="100%" src={harmonia} />
+        <img width="50%" height="50%" src={harmonia} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" height="100%" src={pacheco} />
+        <img width="50%" height="50%" src={pacheco} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" height="80%" src={raia} />
+        <img width="30%" height="20%" src={raia} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" height="80%" src={smartfit} />
+        <img width="20%" height="20%" src={smartfit} />
       </Carousel.Item>
       <Carousel.Item>
-        <img width="100%" height="80%" src={sp} />
+        <img width="30%" height="20%" src={sp} />
       </Carousel.Item>
     </Carousel>
   );

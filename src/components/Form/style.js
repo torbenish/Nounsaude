@@ -15,7 +15,7 @@ export const FormStyle = styled.div`
     max-width: 800px;
     height: 80vh;
     border-radius: 22px;
-    padding: 30px;
+    padding: 40px;
 
     h5 {
       font-family: "MuseoModerno", cursive;

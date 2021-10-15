@@ -16,7 +16,7 @@ function CardProfile() {
       <div className="Card">
         <div className="upper-container">
           <div className="image-container">
-            <img src={profile1} alt="" height="100px" width="100px" />
+            <img src={profile1} alt="" height="50px" width="50px" />
           </div>
         </div>
         <div className="lower-container">
@@ -28,7 +28,7 @@ function CardProfile() {
       <div className="Card">
         <div className="upper-container">
           <div className="image-container">
-            <img src={profile2} alt="" height="100px" width="100px" />
+            <img src={profile2} alt="" height="=50px" width="50px" />
           </div>
         </div>
         <div className="lower-container">
@@ -40,7 +40,7 @@ function CardProfile() {
       <div className="Card">
         <div className="upper-container">
           <div className="image-container">
-            <img src={profile3} alt="" height="100px" width="100px" />
+            <img src={profile3} alt="" height="50px" width="50px" />
           </div>
         </div>
         <div className="lower-container">

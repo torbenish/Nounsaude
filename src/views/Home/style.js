@@ -15,11 +15,11 @@ export const Container = styled.div`
     margin: 0 auto;
   }
   .Back__To__Top h1 {
-    font-size: 57px;
+    font-size: 20px;
     color: #0fa8ff;
   }
   .Back__To__Top p {
-    font-size: 37px;
+    font-size: 20px;
     margin-bottom: 37px;
   }
   .scrolls {

@@ -26,8 +26,8 @@ const Card = () => {
               class="mx-auto d-block"
               src={post.image}
               alt="Imagem do card"
-              width="300"
-              height="200"
+              width="100"
+              height="100"
             />
             <div className="card-body text-dark">
               <h2 className="card-title">{post.title}</h2>
