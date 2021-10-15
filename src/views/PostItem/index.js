@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Container } from "./style";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer"
 
 const PostItem = () => {
   const [postData, setPostData] = useState({});
@@ -27,6 +29,8 @@ if(loading){
   )
 }
 return (
+  <>
+  <Navbar />
   <Container>
     <div className="blog">
       <div className="cards">
@@ -34,20 +38,22 @@ return (
         {postData && (
           <div className="card">
             <div className="card-body">
-            <img src={postData.image} alt="BigCo Inc. logo"/>
+            <img src={postData.image} alt="imagem" width="70%"/>
               <h1>{postData.title}</h1>
               <div className="line"></div>
-              <h2>{postData.content}</h2>
+              <h2>por {postData.author}</h2>
               <div className="line"></div>
-              <h3>{postData.summary}</h3>
+              <h3>{postData.text}</h3>
               <div className="line"></div>
-              <h3>Categoria: {postData.category}</h3>
+              <h3> categoria:{postData.category}</h3>
             </div>
           </div>
         )}
       </div>
     </div>
+    <Footer/>
   </Container>
+  </>
 );
 }
 

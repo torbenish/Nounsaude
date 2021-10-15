@@ -1,5 +1,5 @@
-import Navbar from "../../components/Nav/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer"
 import { useState, useEffect } from "react";
 import { Container } from "./style";
 import Gallery from "../../components/Carousel";
@@ -108,8 +108,8 @@ const Home = () => {
         )}
         <br />
         <Gallery />
-        <Footer />
       </Container>
+      <Footer />
     </>
   );
 };

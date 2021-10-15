@@ -30,7 +30,7 @@ const Card = () => {
             />
             <div className="card-body text-dark">
               <h4 className="card-title">{post.title}</h4>
-              <p className="card-text text-secondary">{post.summary}</p>
+              <p className="card-text text-secondary">por {post.summary}</p>
               <p className="card-text text-secondary">{post.content}</p>
               <a
                 href=""

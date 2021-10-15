@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { Button } from "../Button"
 import { NavStyle } from "./style";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/img/logo.png"
 function Navbar() {
   const [click, setClick] = useState(false);
 
@@ -13,7 +11,7 @@ function Navbar() {
       <NavStyle>
         <nav className="navbar">
           <Link to="/" className="navbar-logo">
-          <img width="40%" src={logo} />
+          NOUN <i class='fa fa-transgender-alt'/>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -39,8 +37,8 @@ function Navbar() {
                 Fale Conosco
               </Link>
             </li>
+            <Link to="/signup"><button type="button" class="btn btn-primary-outline">Como funciona</button></Link>
           </ul>
-          <Link to="/signup"><button type="button" class="btn btn-primary-outline">Como funciona</button></Link>
         </nav>
       </NavStyle>
     </div>

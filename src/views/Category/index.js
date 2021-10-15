@@ -1,10 +1,9 @@
-import { CardStyle } from "./style";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../../services/api";
 import { Container } from "./style"
 
-const Cat = () => {
+const Category = () => {
   const [posts, setPosts] = useState([]);
 
 useEffect(() => {
@@ -20,7 +19,7 @@ useEffect(() => {
 
 return (
   <Container>
-    {posts.filter((post, key) => {
+    {posts.map((post, key) => {
         return (
           <div className="card text-center bg-light" key={key}>
             <img
@@ -56,4 +55,4 @@ return (
 );
 }
 
-export default Cat;
+export default Category;

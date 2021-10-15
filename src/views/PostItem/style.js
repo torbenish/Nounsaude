@@ -21,10 +21,10 @@ export const Container = styled.div`
 
 	border: 2px solid rgb(226, 226, 226);
 
-	padding: 40px 25px;
+	padding: 40px 45px;
 
 	width: 100%;
-	max-width: 600px;
+	max-width: 800px;
 
 	border-radius: 10px;
 

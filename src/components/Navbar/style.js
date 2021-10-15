@@ -14,7 +14,7 @@ export const NavStyle = styled.nav`
     z-index: 999;
   }
   .navbar-logo {
-    color: #fff;
+    color: #e50a7f;
     justify-self: start;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -29,7 +29,7 @@ export const NavStyle = styled.nav`
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 150px;
+    grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 70vw;
@@ -64,8 +64,9 @@ export const NavStyle = styled.nav`
   .btn-primary-outline {
   background-color: transparent;
   color: #1888ff;
-  margin-left: -180px;
-  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: -30px;
+  margin-top: 12px;
   border: 1px solid #00A0E3;
   padding: 13px 94px;
   width: 333px;
@@ -80,6 +81,10 @@ export const NavStyle = styled.nav`
   @media screen and (max-width: 540px) {
     .navbar {
       background: #1888ff;
+    }
+
+    .navbar-logo{
+      color: #FFFFFF;
     }
 
     .NavbarItems {

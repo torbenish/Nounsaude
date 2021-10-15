@@ -6,8 +6,9 @@ export const Container = styled.div`
     align-items: center;
     width: 100%;
     height: 100vh; */
-    width: 100%;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   .Back__To__Top {
     position: relative;
     max-width: 1280px;

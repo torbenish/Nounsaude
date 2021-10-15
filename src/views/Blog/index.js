@@ -1,5 +1,6 @@
-import Navbar from "../../components/Nav/Navbar";
+import Navbar from "../../components/Navbar";
 import Card from "../../components/Card";
+import Footer from "../../components/Footer";
 import { useState, useEffect } from 'react';
 import { Container } from "./style";
 import { FiArrowUp } from "react-icons/fi";
@@ -68,6 +69,7 @@ const Blog = () => {
               </>
           )}
       </Container>
+      <Footer/>
       </div>
     </>
   );

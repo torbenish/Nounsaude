@@ -1,84 +1,53 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.footer`
-  footer {
-    width: 100%;
-    min-height: 250px;
-    background: white;
-    display: flex;
-  }
+  @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500;600;700&family=Work+Sans:wght@400;700&display=swap");
 
-  footer .boxs {
-    width: 300px;
-    min-height: 100px;
-    padding: 20px;
+  .container-fluid  {
+    padding-top: 10px;
   }
-
-  footer .boxs:nth-child(4) {
-    width: 500px;
-  }
-
-  .boxs h2 {
+  .text-uppercase {
     color: #00a0e3;
-    margin-bottom: 20px;
+    font-family: MuseoModerno;
+    font-size: 24px;
   }
-
-  .boxs ul li {
-    margin: 10px 0px;
-    list-style: none;
+  img {
+    margin-bottom: 10px;
   }
-
-  .boxs ul li a {
-    color: #00a0e3;
+  p {
+    color: #e50a7f;
+    font-family: Work Sans;
+  }
+  li {
+    margin: 6px;
+  }
+  li a{
+    font-size: 18px;
+    color: #e50a7f;
     text-decoration: none;
+    font-family: Work Sans;
   }
 
-  .boxs ul li a:hover {
-    color: #e50a7f;
-  }
-
-  .boxs p {
-    color: #e50a7f;
-    text-align: justify;
-  }
-
-  .footer {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 0px 20px;
-    text-align: center;
-  }
-
-  .footer .sociais {
-    display: flex;
-  }
-
-  .sociais .social {
-    width: 20px;
-    height: 20px;
-    background: white;
-    line-height: 40px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: color 0.2s linear;
-  }
-
-  .sociais .social a {
+  .footer-copyright {
     color: #00a0e3;
-    font-size: 1.5em;
+    font-family: MuseoModerno;
   }
 
-  .sociais .social:hover a {
-    color: #e50a7f;
-  }
-
-  main {
-    color: #00a0e3;
-    text-align: center;
+  @media (max-width: 850px) {
+    footer {
+      flex-direction: column;
+    }
+    footer .boxs {
+      width: 100%;
+      text-align: center;
+    }
+    footer .boxs:nth-child(4) {
+      width: 100%;
+    }
   }
 `;
+
+// color: #00a0e3;
+// color: #e50a7f;
+// font-family: MuseoModerno;
+// font-family: Work Sans;
