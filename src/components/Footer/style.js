@@ -28,6 +28,10 @@ export const FooterStyle = styled.footer`
     font-family: Work Sans;
   }
 
+  li a:hover{
+  color: #00a0e3;
+  }
+
   .footer-copyright {
     color: #00a0e3;
     font-family: MuseoModerno;

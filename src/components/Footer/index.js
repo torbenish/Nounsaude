@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="row">
             <div className="col-md-4 mt-md-0 mt-4">
                <img src={logo} alt="logo noun" height="40px"/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ad quibusdam dolore cum, officia odio sapiente quod reiciendis sint, similique voluptatem praesentium quam maiores voluptate placeat ex eos sit libero?</p>
+                <p>Somos um plano de saúde para pessoas trans e não binárias.</p>
             </div>
 
             <hr className="clearfix w-100 d-md-none pb-0"/>
