@@ -36,24 +36,18 @@ const Home = () => {
         <Navbar />
         <div className="Back__To__Top">
           <Principal />
-          <h1>Home</h1>
+          <div className="home-container">
+          <h1>Sem Preconceito, sem discriminação e com uma <span class="pink">equipe preparada!</span></h1>
+          <br/>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+          Sabemos como é dificil, caro e exaustivo fazer a sua hormonioterapia. Por isso a Noun foi criada, para que você seja realmente você, sem preconceitos sem regras. Chega de perder horas procurando profissionais capacitados, aqui você conta com os melhores profissionais, prontos para lhe atender.
           </p>
+          <h1>Um blog feito para você ter informações de verdade.</h1>
+          <br/>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+          A Noun traz para você o BeYou Blog, nosso portal de informações, dicas de saúde, cuidados para a alimentação e bem estar. Tudo feito por especialistas e de graça!
           </p>
+        </div>
         </div>
         <div className="CardProfile">
           <CardProfile />
@@ -71,6 +65,9 @@ const Home = () => {
           </>
         )}
         <br />
+        <div className="container-carousel">
+        <h2>Além de tudo, você ainda ganha desconto com nossos parceiros:</h2>
+        </div>
         <Gallery />
       </Container>
       <Footer />

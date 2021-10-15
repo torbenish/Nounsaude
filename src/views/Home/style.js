@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500;600;700&family=Work+Sans:wght@400;700&display=swap");
   /* display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +24,43 @@ export const Container = styled.div`
     font-size: 20px;
     margin-bottom: 37px;
   }
+
+  .home-container {
+    background-color: #0fa8ff;
+    padding: 20px 10px;
+    margin-top: -22px;
+    margin-bottom: 10px;
+  }
+
+  .home-container h1{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "MuseoModerno", cursive;
+  }
+
+  .pink{
+    color: #E50A7F;
+  }
+
+  .home-container p{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Work Sans";
+  }
+
+  h2 {
+    font-family: "MuseoModerno", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #E50A7F;
+  }
+
+  .container-carousel {
+    display: flex;
+    justify-content: center;
+  }
+
+
   .scrolls {
     color: #fff;
     width: 60px;
@@ -62,5 +101,9 @@ export const Container = styled.div`
     .CardProfile {
       flex-direction: column;
     }
+
+    .home-container {
+    margin-top: 85px;
+  }
   }
 `;

@@ -33,6 +33,8 @@ export const PrincipalStyle = styled.div`
   .estiloPrincipal h1 {
     width: 350px;
     font-size: 32px;
+    color: white;
+    font-weight: bold;
   }
 
   .estiloPrincipal p {
