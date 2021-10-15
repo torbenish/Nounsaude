@@ -32,8 +32,8 @@ const Home = () => {
 
   return (
     <>
+    <Navbar />
       <Container>
-        <Navbar />
         <div className="Back__To__Top">
           <Principal />
           <div className="home-container">

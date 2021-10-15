@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { NavStyle } from "./style";
 import { Link } from "react-router-dom";
+
 function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  
+
   return (
     <div>
       <NavStyle>
