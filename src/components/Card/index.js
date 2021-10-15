@@ -2,7 +2,7 @@ import { CardStyle } from "./style";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../../services/api";
-import Button from "react-bootstrap/Button"
+import Button from "react-bootstrap/Button";
 const Card = () => {
   const [posts, setPosts] = useState([]);
 
