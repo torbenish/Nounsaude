@@ -164,25 +164,23 @@ export const Container = styled.div`
     padding-left: 0;
     padding-top: 0;
   }
-
-
-
-
   @media screen and (max-width: 540px) {
-
-.content .textBox {
-
-  display: none;
-}
-
-  @media screen and (max-width: 600px) {
     .content .textBox {
-      flex-direction: column;
+      display: none;
     }
 
-    .card .cards{
-      flex-direction: column;
+    .card-container{ 
+      
+    }
+
+    @media screen and (max-width: 600px) {
+      .content .textBox {
+        flex-direction: column;
+      }
+
+      .card .cards {
+        flex-direction: column;
+      }
     }
   }
 `;
-

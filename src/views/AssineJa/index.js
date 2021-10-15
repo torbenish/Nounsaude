@@ -43,6 +43,7 @@ const AssineJa = () => {
             <a href="/signup">Fazer minha simulação</a>
           </div>
 
+          <div className="card-container">
           <div className="card" width="80rem">
             <div className="cards">
               <h5 className="cardtitle">Planos mensais a partir de:</h5>
@@ -56,6 +57,7 @@ const AssineJa = () => {
               <div className="simular"></div>
             </div>
           </div>
+        </div>
         </div>
       </Container>
       <br />
