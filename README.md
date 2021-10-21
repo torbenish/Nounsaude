@@ -13,7 +13,7 @@
   
 - Site: [NOUN Saude Trans](https://nounsaude.vercel.app/)
 
-- Repositório da API [NOUN Saude Trans](https://github.com/torbenish/Nounsaude-API)
+- Repositório da API: [NOUN Saude Trans](https://github.com/torbenish/Nounsaude-API)
   
 ## 💻Instalação 
 
